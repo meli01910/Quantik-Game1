@@ -1,0 +1,892 @@
+
+/*******************PAGE LOGIN*****************************************/
+
+body {
+    font-family: Lato, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    /*background-image : linear-gradient(
+            to bottom,
+            rgba(153, 154, 224, 0.5),
+            rgba(2, 2, 54, 0.5)
+    ); /*url("../src/Images/bc.jpeg");
+    background-repeat: no-repeat;}*/
+}
+body * {
+    box-sizing: border-box;
+}
+
+
+
+.player-icon {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-login form {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.left-login-image {
+    width: 40vw;
+    margin-top: 30px;
+}
+
+.left-login>h1 {
+    font-size: 4vw;
+    color: black;
+
+}
+
+.right-login {
+    color: white;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-login {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #050d36;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px black;
+
+
+}
+.login-heading {
+    color: white; /* Couleur du texte */
+}
+
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+
+
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: black;
+    color: white;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.textfield>label {
+    color: white;
+    margin-bottom: 10px;
+
+}
+
+.textfield>input::placeholder {
+    color: white;
+}
+
+.btn-login {
+
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+
+
+}
+
+@media only screen and (max-width:950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login>h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-login-image {
+        width: 50vh;
+
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
+/*******************Page HOME*************************************************/
+
+
+.video-button {
+    text-align: center; /* Centre le bouton horizontalement */
+    margin-top: 20px; /* Ajoute une marge en haut */
+}
+
+.video-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #050d36; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Supprime les soulignements du lien */
+    border-radius: 5px; /* Arrondi les coins */
+}
+
+.video-button a:hover {
+    background-color: #debe7c; /* Changement de couleur au survol */
+}
+
+/* Style de base */
+.arrow-icon{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.icon-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;}
+
+.icon-container img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.tutorial-container {
+    max-width: 800px;
+
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(108, 98, 98, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.tutorial-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tutorial-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Ajouter un effet de transition au survol */
+.tutorial-container:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    width:90%;
+    max-width: 1400px;
+    margin:auto;
+
+}
+
+ h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+h1 span:nth-child(2){
+    color: #bea711;
+
+}
+
+.card-container{
+    display:grid ;
+    grid-template-columns:repeat(4,1fr);
+    gap:80px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.card-wrapper{
+    position: relative;
+    min-height: 150px;
+    perspective: 2000px;
+    perspective-origin:top ;
+    transform-style: preserve-3d;
+
+
+
+}
+.card-wrapper:hover .card{
+    transform: rotateY(180deg) scale(1.1); /* Agrandit la carte de 10% lors du survol */
+
+}
+.card{
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    width: 100%; /* S'assure que la carte prend toute la largeur du conteneur */
+    height: 100%; /* Nouvelle hauteur */
+
+
+    color: white;
+    font-weight: bold;
+}
+
+
+.card-front,.card-back{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius:8px;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.card-front{
+    background: rgb(190, 83, 23);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-wrapper:nth-child(even) .card-front{
+    background-color: #050d36;
+
+}
+.card-back {
+    background: #050d36;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-wrapper:nth-child(even) .card-back{
+    background-color: #050d36;
+}
+.carte-button{
+    display:inline-block;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: normal;
+    font-size: 12px;
+    color: #333;
+    transition:
+            background-color 0.3s ease-out,
+            color 0.3s ease-out;
+
+}
+/* Style pour la liste déroulante */
+.menu-button{display: block;
+width: 100%; /* Les boutons prennent toute la largeur de la carte */
+padding: 10px;
+margin-bottom: 5px;
+background-color: rgb(255, 255, 255);
+border: 1px solid #ccc;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;}
+.card-back::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card-back::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.card-back::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.card-back::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.body-button {
+    display:inline-block;
+    padding: 15px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform:uppercase ;
+    background-color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    transition:
+            background-color 0.3s ease-out,
+            color 0.3s ease-out;
+
+
+}
+.card-wrapper:nth-child(odd) .card-back button:hover{
+    background: rgb(190, 83, 23);
+    color: white;
+}
+
+
+
+.logout-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+
+.btn-deconnexion{
+    text-align: center;
+    margin-top: 20px;
+    color: #050d36;
+}
+
+.logout-container button {
+    /* Styles de base du bouton */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;}
+
+.logout-container button:hover {
+    /* Styles lorsque le curseur est survolé */
+    background-color: #be5317; /* Nouvelle couleur de fond */
+    color: #fff; /* Nouvelle couleur du texte */
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    /*background-image: url('../Ressources/Images/'');*/
+    background-size: cover;
+}
+.iconAttente {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../Ressources/Images/AttenteIcon.png');
+    background-size: cover;
+
+}
+.iconNewGame {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../Ressources/Images/icons8-plus-100(1).png');
+    background-size: cover;
+
+}
+.iconJoin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../Ressources/Images/icons8-entrer-48(1).png');
+    background-size: cover;
+
+}
+.iconOver {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url('../Ressources/Images/icons8-trophée-94.png');
+    background-size: cover;
+
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.icon:hover {
+    animation: pulse 1s infinite;
+}
+
+@media (max-width: 768px) {
+    .game-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+
+
+}
+
+
+
+/******************************PAGES DU JEU ******************************/
+.containerJeu {
+    width:90%;
+    max-width: 1400px;
+    margin-left: 140px;
+
+}
+
+.element-container{
+    display:grid ;
+    grid-template-columns:repeat(3,auto);
+    gap:5px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 50px;
+}
+.player-info {
+    text-align: center; /* Centre le contenu */
+    margin-bottom: 20px; /* Espace entre les joueurs et les pièces/plateau */
+}
+
+.player-photo {
+    width: 80px; /* Taille de la photo */
+    height: 80px;
+    border-radius: 50%; /* Photos rondes */
+    margin-bottom: 2px; /* Espace entre la photo et le nom */
+    margin-top: 0px;
+}
+
+.player-name {
+    font-size: 16px; /* Taille du texte */
+    margin-top: 0px;
+    color: #333; /* Couleur du texte */
+}
+.container-photo {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 150px;
+}
+.container-piece{
+
+    margin-top:0px;
+}
+.element-wrapper {
+    position: relative;
+    min-height: 150px;
+    perspective: 2000px;
+
+}
+
+
+
+.plateau-container form {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+/* Style du plateau */
+.plateau {
+    background-color: #363533; /* Couleur de fond DU plateau Quantik */
+    border: 3px solid #000000; /* Bordure autour du plateau */
+    margin-top: 40px;
+}
+
+/* Style des cases du plateau */
+.plateau td {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border: 2px solid #000000; /* Bordure autour de chaque case */
+}
+
+/* Style pour les pièces */
+.piece {
+    margin: 5px; /* Ajoutez une marge autour de chaque pièce */
+    padding: 10px; /* Ajoutez un espacement interne */
+    border: 2px solid black; /* Ajoutez une bordure noire */
+    border-radius: 5px; /* Arrondissez les coins */
+    cursor: pointer; /* Changez le curseur au survol */
+    background: #c9c1c1;
+}
+.pieces-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles pour les images des pièces */
+.piece-images {
+    width: 50px; /* Largeur souhaitée */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
+.titre{
+
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.casePasDisponibles{
+    background-color: #f0d9b5;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border: 1px solid #7b5438; /* Bordure autour de chaque case */
+}
+
+.caseDisponibles {
+    background-color: #3c933c;
+    /* Couleur de fond pour les cases valides */
+    width: 80px;
+    height: 80px;
+}
+.caseDisponibles:hover{
+    background-color: #c8f6a2; /* Couleur de fond au survol */
+}
+
+.buttonAnnuler {
+    margin-left: 65px;
+    margin-bottom: 20px;
+    border-radius: 2rem;
+    border: 1px solid #666;
+    padding: 1rem 3rem;
+    box-shadow: inset 0px -10px 3px rgba(2, 2, 54, 0.5);
+    background: #cb0c0c !important;
+    border: 1px solid #ec0f0f !important;
+    /*box-shadow: inset 0px -10px 3px #990000 !important;*/
+
+}
+
+
+.recommencer-container form {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #debe7c;
+    color: #333;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #050d36;
+    color: #ffffff;
+}
+
+
+.icon-container {
+     position: fixed;
+     top: 20px; /* Ajustez cette valeur selon votre préférence */
+     left: 20px; /* Ajustez cette valeur selon votre préférence */
+     z-index: 9999; /* Assurez-vous que l'icône est au-dessus des autres éléments */
+ }
+
+.icon-container img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+/* Style pour le message de victoire */
+.message-victoire {
+    color: #d5a120; /* Couleur du texte */
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    text-align: center; /* Centrer le texte */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Styles pour les confettis */
+
+.confetti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    background: #d5a120;
+    top: 0;
+    opacity: 0;
+}
+.confetti-piece:nth-child(1) {
+    left: 7%;
+    transform: rotate(-79deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+.confetti-piece:nth-child(2) {
+    left: 14%;
+    transform: rotate(-42deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 2s;
+    animation-duration: 2.5s;
+}
+.confetti-piece:nth-child(3) {
+    left: 21%;
+    transform: rotate(-25deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 3s;
+    animation-duration: 3.5s;
+}
+.confetti-piece:nth-child(4) {
+    left: 28%;
+    transform: rotate(-10deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 4s;
+    animation-duration: 3.5s;
+}
+.confetti-piece:nth-child(5) {
+    left: 35%;
+    transform: rotate(24deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 5s;
+    animation-duration: 3.5s;
+}
+.confetti-piece:nth-child(6) {
+    left: 42%;
+    transform: rotate(-9deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+.confetti-piece:nth-child(7) {
+    left: 49%;
+    transform: rotate(-28deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 2s;
+    animation-duration: 2.5s;
+}
+.confetti-piece:nth-child(8) {
+    left: 56%;
+    transform: rotate(-49deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 3s;
+    animation-duration: 3.5s;
+}
+.confetti-piece:nth-child(9) {
+    left: 63%;
+    transform: rotate(-11deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 4s;
+    animation-duration: 3s;
+}
+.confetti-piece:nth-child(10) {
+    left: 70%;
+    transform: rotate(63deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 5s;
+    animation-duration: 3.5s;
+}
+.confetti-piece:nth-child(11) {
+    left: 77%;
+    transform: rotate(27deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+.confetti-piece:nth-child(12) {
+    left: 84%;
+    transform: rotate(24deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 2s;
+    animation-duration: 2.5s;
+}
+.confetti-piece:nth-child(13) {
+    left: 91%;
+    transform: rotate(54deg);
+    animation: makeItRain 5000ms infinite ease-out;
+    animation-delay: 3s;
+    animation-duration: 3s;
+}
+.confetti-piece:nth-child(odd) {
+    background: #d5a120;
+}
+.confetti-piece:nth-child(even) {
+    z-index: 1;
+}
+.confetti-piece:nth-child(4n) {
+    width: 5px;
+    height: 12px;
+    animation-duration: 5000ms;
+}
+.confetti-piece:nth-child(3n) {
+    width: 3px;
+    height: 10px;
+    animation-duration: 5000ms;
+    animation-delay: 2000ms;
+}
+.confetti-piece:nth-child(4n-7) {
+    background-color: #d5a120;
+}
+
+@keyframes makeItRain {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        transform: translateY(300px);
+    }
+}
+
+/* Style pour le message de défaite */
+.message-defaite {
+    color: #da4b3e;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.score{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+/*******************************HOME*************************************************/
